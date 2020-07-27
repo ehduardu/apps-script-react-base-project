@@ -4,7 +4,7 @@
 # Google Apps Script - Web App with React - Base Project
 _Use this project as your boilerplate for React apps in Web Apps from Google Apps Script._
 
-This project uses enuchi's excellent [React-Google-Apps-Script](https://github.com/enuchi/React-Google-Apps-Script) as a starting point for developing apps scripts projects with support for React, and adds support for building Google Web Apps with support for Routes. Simply clone this project and modify the source code to get started developing React apps with Google Apps Script.
+This project uses enuchi's excellent [React-Google-Apps-Script](https://github.com/enuchi/React-Google-Apps-Script) as a starting point for developing apps scripts projects with support for React, and adds support for building Google Web Apps with support for Routes and Styled Components. Simply clone this project and modify the source code to get started developing React apps with Google Apps Script.
 
 ## License
 
