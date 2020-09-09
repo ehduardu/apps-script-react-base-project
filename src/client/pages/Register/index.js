@@ -1,12 +1,16 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
+import server from '../../utils/server';
 import { Container, CardButton } from './styles';
 
 export default function Register() {
   const history = useHistory();
 
-  function goToHome() {
+  const { getScriptToken } = server;
+
+  async function goToHome() {
+    console.log(await getScriptToken());
     history.push('/');
   }
 
