@@ -1,5 +1,7 @@
 function doGet() {}
 
+function getScriptToken() {}
+
 !function(e, a) {
     for (var i in a) e[i] = a[i];
 }(this, function(modules) {
@@ -46,7 +48,7 @@ function doGet() {}
         return __webpack_require__.d(getter, "a", getter), getter;
     }, __webpack_require__.o = function(object, property) {
         return Object.prototype.hasOwnProperty.call(object, property);
-    }, __webpack_require__.p = "", __webpack_require__(__webpack_require__.s = 1);
+    }, __webpack_require__.p = "", __webpack_require__(__webpack_require__.s = 2);
 }([ function(module, __webpack_exports__, __webpack_require__) {
     "use strict";
     __webpack_exports__["a"] = function() {
@@ -54,10 +56,15 @@ function doGet() {}
     };
 }, function(module, __webpack_exports__, __webpack_require__) {
     "use strict";
+    __webpack_exports__["a"] = function() {
+        return Logger.log("Getting script token"), ScriptApp.getOAuthToken();
+    };
+}, function(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
     __webpack_require__.r(__webpack_exports__), function(global) {
-        var _webapp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-        global.doGet = _webapp__WEBPACK_IMPORTED_MODULE_0__["a"];
-    }.call(this, __webpack_require__(2));
+        var _webapp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0), _controllers_ExampleController__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+        global.doGet = _webapp__WEBPACK_IMPORTED_MODULE_0__["a"], global.getScriptToken = _controllers_ExampleController__WEBPACK_IMPORTED_MODULE_1__["a"];
+    }.call(this, __webpack_require__(3));
 }, function(module, exports) {
     var g;
     g = function() {

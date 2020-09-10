@@ -1,6 +1,6 @@
 const doGet = () => {
   return HtmlService.createHtmlOutputFromFile('app.html')
-    .setTitle('Projeto Base')
+    .setTitle('Base Project')
     .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
 };
 
